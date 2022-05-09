@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>JQuery Training</title>
+</head>
+<body>
+    <!-- <div class="test">I can hide with button</div>
+    <button id="hideandseek">Click Me</button> -->
+
+    <div class="container">
+        <div class="hello">
+            <p>Hello</p>
+        </div> <br>
+        <div class="hi">
+            <p>Hi</p>
+        </div>
+    </div> <br>
+    <div class="container">
+        <button id="hide">Click Me</button>
+    </div>
+
+    <script>
+        // document.getElementById('test').innerHTML='<h1>Hello jQuery!</h1>';
+        
+        // $(document).ready(function(){
+        //     $('#test').text('Hello, jQuery!');
+        // });
+
+        // function hideandseek(){
+        //     document.getElementById('test').style.display='none';
+        // };
+
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                $('.hello').hide('slow');
+                $('.hi').hide('slow');
+            });
+        });
+        // $(document).ready(function(){
+        //     $('#hide').click(function(){
+        //         $('.hi').hide('slow');
+        //         // $('.hi').hide('slow');
+        //     });
+        // });
+    </script>
+</body>
+</html>
